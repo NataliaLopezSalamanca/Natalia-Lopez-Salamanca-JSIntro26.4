@@ -1,9 +1,11 @@
-const today = new Date().getFullYear();
-const footer = document.querySelector("footer");
+const today = new Date();
+const thisYear = today.getFullYear();
+const footer = document.createElement("footer");
 const copyright = document.createElement("p");
 
 copyright.innerHTML = `&copy; ${today} Natalia López Salamanca`;
 footer.appendChild(copyright);
+document.body.appendChild(footer);
 
 const skills = ["HTML", "CSS", "JavaScript", "Git", "GitHub", "React", "Node.js"];
 const skillsSection = document.getElementById("skills");
