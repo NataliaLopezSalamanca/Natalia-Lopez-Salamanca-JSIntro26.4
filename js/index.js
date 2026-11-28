@@ -3,7 +3,7 @@ const thisYear = today.getFullYear();
 const footer = document.createElement("footer");
 const copyright = document.createElement("p");
 
-copyright.innerHTML = `&copy; ${today} Natalia López Salamanca`;
+copyright.innerHTML = `&copy; ${thisYear} Natalia López Salamanca`;
 footer.appendChild(copyright);
 document.body.appendChild(footer);
 
